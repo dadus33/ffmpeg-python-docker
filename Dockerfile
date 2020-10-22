@@ -28,7 +28,7 @@ WORKDIR /
 RUN rm -rf ffmpeg-4.1.4-amd64-static*
 
 # Set the original shell back
-SHELL ["bin/sh", "-c"]
+SHELL ["/bin/sh", "-c"]
 
 # Override python entrypoint
-ENTRYPOINT ["bin/bash"]
+ENTRYPOINT ["/bin/bash"]
